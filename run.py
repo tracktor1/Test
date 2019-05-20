@@ -13,5 +13,6 @@ host_ren(newhostname)
 
 
 # run apt-get update
-#install_apt(apt_update)
+print ("Updating apt...")
+install_apt(apt_update)
 
