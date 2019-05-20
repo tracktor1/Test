@@ -1,28 +1,17 @@
 #!/usr/bin/env python
-"""
-    Please note: this script works with python 3 only
-    All backup are saved in the users home dir under backup dir:
-        /home/username/backup/device_serial
-    run it as:
-        python3 ./1.py
-"""
-
 
 import os
-import socket
 from func import *
 
-if os.geteuid()==0:
-  print ("Running as root.")
-else:
-  print ("User is not root.")
 
-nodeinstall = 'node'
-docinstall = 'docker'
+apt_update = 'update'   # update repository
+
+newhostname = 'host2'   # New hostname
+
+#rename host
+host_ren(newhostname)
 
 
-gethost = socket.gethostname()
-print(gethost)
-
-#install_apt('update')
+# run apt-get update
+#install_apt(apt_update)
 
