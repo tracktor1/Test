@@ -2,7 +2,7 @@
 
 import os
 from func import *
-
+import json
 
 apt_update = 'update'   # update repository
 apt_nodejs = 'nodejs'
@@ -32,6 +32,11 @@ install_apt(apt_update)
 # Install docker
 install_apt(apt_docker)
 
+# Json dump
+jdate = { "year": "2000", "month": "12", "day": "1" }
+jdict = { "content": "hello world", "date": jdate }
+
+print (json.dumps(jdict))
 
 
 
