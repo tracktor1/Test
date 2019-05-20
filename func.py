@@ -16,7 +16,6 @@ def host_ren(h_name):
         print("New host will be: ", h_name)
         hname = 'sudo hostnamectl set-hostname ' + h_name
         os.system(hname)
-        return "Rename host"
     else:
-        return "Rename is not needed"
+        print ("Rename is not needed")
 
