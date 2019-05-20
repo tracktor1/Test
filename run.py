@@ -36,7 +36,8 @@ install_apt(apt_docker)
 jdate = { "year": "2000", "month": "12", "day": "1" }
 jdict = { "content": "hello world", "date": jdate }
 
-print (json.dumps(jdict))
+xxx = json.dumps(jdict, sort_keys=True, indent=3)
+print (xxx)
 
 
 
