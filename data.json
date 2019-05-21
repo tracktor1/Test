@@ -1,1 +1,1 @@
-"{\n   \"content\": \"hello world\",\n   \"date\": {\n      \"day\": 21,\n      \"month\": 5,\n      \"year\": 2019\n   }\n}"
+{"content": "hello world", "date": {"month": 5, "year": 2019, "day": 21}}
