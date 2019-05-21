@@ -17,7 +17,7 @@ xxx = json.dumps(jdict, sort_keys=True, indent=3)
 print (xxx)
 
 with open(relative_path("data.json"), 'w') as outfile:
-    json.dump(xxx, outfile)
+    json.dump(jdict, outfile)
 
 '''
 print('serialization')
