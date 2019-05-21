@@ -44,7 +44,7 @@ jdict = { "content": "hello world", "date": jdate }
 xxx = json.dumps(jdict, sort_keys=True, indent=3)
 print (xxx)
 
-with open(relative_path('data.json'), 'w') as outfile:
-    json.dump(data, outfile)
+with open(relative_path("data.json"), 'w') as outfile:
+    json.dump(jdict, outfile)
 
 
