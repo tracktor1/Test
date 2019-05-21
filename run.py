@@ -1,8 +1,10 @@
 #!/usr/bin/env python
 
 import os
+import datetime
 from func import *
 import json
+
 
 apt_update = 'update'   # update repository
 apt_nodejs = 'nodejs'
@@ -32,13 +34,17 @@ install_apt(apt_update)
 # Install docker
 install_apt(apt_docker)
 
+
+
 # Json dump
-jdate = { "year": "2000", "month": "12", "day": "1" }
+now = datetime.datetime.now() # This will return current year month day
+jdate = { "year": now.year, "month": now.month, "day": now.day}
 jdict = { "content": "hello world", "date": jdate }
 
 xxx = json.dumps(jdict, sort_keys=True, indent=3)
 print (xxx)
 
-
+with open(relative_path('data.json'), 'w') as outfile:
+    json.dump(data, outfile)
 
 
