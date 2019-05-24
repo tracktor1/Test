@@ -2,8 +2,7 @@
 
 import datetime
 
-now = datetime.datetime.now()
-
+now = datetime.datetime.year()
 print (now)
 
 
